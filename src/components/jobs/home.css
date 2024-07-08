@@ -1,0 +1,116 @@
+.hero-container {
+  background-image: url("../../assets//hero-section-bg-img.png");
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  object-fit: contain;
+}
+
+.hero-main-heading {
+  margin: 0px;
+  color: #ffffff;
+  font-family: noto sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.hero-input-container {
+  padding: 10px 16px;
+  width: fit-content;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.hero-input-container input {
+  font-size: 1rem;
+  border: none;
+  border-left: 1px solid #efefef;
+  margin-left: 8px;
+  line-height: 160%;
+  padding-left: 8px;
+  font-weight: 500;
+  font-family: Noto Sans;
+}
+.input-icon {
+  color: #646464;
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+}
+
+.hero-search-button {
+  height: 48px;
+  padding: 10px 32px;
+  border-radius: 12px;
+  background: var(--green);
+  border: none;
+  color: #ffffff;
+}
+.hero-inputs-holder-container {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* popular job section___________________________ */
+.section-2-bg {
+  margin: 32px 0px;
+}
+
+.section2-heading {
+  color: #323232;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  padding: 24px 0px;
+}
+
+/* jobs section___________________________________ */
+
+.jobs-bg-container {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 40px;
+}
+.jobs-left-container {
+  width: 20%;
+  margin-top: 116px;
+}
+.jobs-right-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.jobs-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pagination-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+@media (min-width:1200px) {
+  .jobs-bg-container {
+    padding: 24px 80px;
+  }  
+}

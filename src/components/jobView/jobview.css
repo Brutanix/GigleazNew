@@ -1,0 +1,315 @@
+.jobview-bg-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px !important;
+}
+
+.jobview-top-bg {
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.jobview-top-bg button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--green);
+  text-align: center;
+  font-family: noto sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  gap: 12px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.jobview-top-bg p {
+  color: var(--textcolor);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  /* margin:0; */
+}
+.jobview-bottom-bg > h1 {
+  color: #636363;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+}
+.jobview-bottom-bg {
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-bottom: 32px;
+}
+.job-toggle-btn {
+  display: flex;
+  width: 340px;
+  height: 56px;
+  padding: 6px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  color: var(--textcolor);
+}
+.toggle-tabs {
+  flex-grow: 1;
+  cursor: pointer;
+  text-align: center;
+}
+.selected-tab {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+}
+.job-toggle-btn-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.role-details-bg {
+  padding: 24px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.role-detail-bg {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+  border-left: 1.6px solid rgba(41, 171, 135, 0.2);
+}
+.role-detail-bg p {
+  font-size: 1rem;
+  line-height: 160%;
+  font-weight: 500px;
+}
+.role-detail-bg .role-key {
+  color: var(--textcolor);
+}
+.role-detail-bg .role-value {
+  color: var(--green);
+}
+
+.description-faq-bg h1 {
+  color: #393939;
+  font-family: "Noto Sans";
+  font-size: 1.5em;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 38.4px */
+}
+
+.description-faq-bg p {
+    color: #646464;
+font-family: "Noto Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+  }
+  .description-faq-bg ul{
+    padding-left: 18px;
+  }
+
+  .description-faq-bg ul li{
+    color: #646464;
+font-family: "Noto Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+  }
+    .description-faq-bg ul li span{
+       font-weight:bold;
+    }
+  
+.description-faq-bg{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.description-faqs-bg{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.order-faqs{
+    padding-left: 18px;
+}
+.order-faqs  li {
+    color: #646464;
+    font-family: "Noto Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+.order-faqs  li span{
+    font-weight: bold;
+}
+.join-para{
+    font-style: italic !important;
+    font-weight: bold !important;
+    font-size: 1.25rem;
+    /* font-weight: 600; */
+}
+.job-apply-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-bottom: 32px; */
+}
+.job-apply-btn-container button{
+    display: flex;
+    height: 48px;
+    padding: 10px 24px 10px 32px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    color: var(--green);
+    border:0.5px solid var(--green);
+}
+.description-faqs-bg{
+  margin-bottom: 64px !important;
+}
+
+
+/* _____________________form styling__________________ */
+.form-widget{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.widgets-wraper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:16px
+}
+
+.form-widget label{
+  color: #969696;
+font-family: "Noto Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+}
+.form-widget input{
+  border-radius: 12px;
+ background: #F6F6F6;
+ padding:16px 0px;
+ border: none;
+ outline: none;
+}
+.form-bg-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.phone-icons-bg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:7px
+}
+.phone-number-bg{
+  border-radius: 12px;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:0px 16px;
+}
+.phone-icons-bg > span{
+  color:var(--textcolor);
+}
+.phone-number-bg > input{
+  width: 100%;
+  margin-left: 8px !important;
+}
+.single-form-widget{
+  width:100%;
+}
+.resume-upload-container{
+  margin-top: 24px !important;
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+}
+.resume-upload-container>p{
+font: 1rem;
+color: #969696;
+}
+.resume-upload-container >div{
+  display: flex;
+  padding: 70px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 12px;
+border: 2px dashed #29AB87;
+background: rgba(41, 171, 135, 0.20);
+}
+.resume-upload-bg>p{
+  color: #29AB87;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; 
+}
+
+.resume-input >input{
+  display: none;
+}
+.resume-input >label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  color: white;
+  background-color: 
+  rgba(41, 171, 135, 1);
+  padding:12px 16px;
+  border-radius: 12px;
+}
+
+.submit-application-container{
+  margin-top: 64px !important;
+}
+
+@media (min-width:1200px) {
+  .jobview-top-bg {
+    padding: 24px 80px;
+  }
+  .jobview-bottom-bg {
+    padding: 24px 80px;
+  }
+}

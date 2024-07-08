@@ -1,0 +1,240 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.nav-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f8f8f8;
+  font-family: Poppins;
+  padding: 10px 16px;
+}
+.nav-links-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 2rem;
+  align-items: center;
+  color: #393939;
+}
+.nav-button-container {
+  cursor: pointer;
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 10px;
+}
+
+.nav-button-container svg {
+  font-size: 12px;
+}
+
+/* dropddown ______________________________________ */
+.home-drop-container {
+  width: 80%;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 10px 24px;
+  padding-right: 20px;
+  border: none;
+  color: #29ab87;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  outline: none;
+  background-color: #e9f6f3;
+  appearance: none;
+}
+.dropdown-bg-container{
+    position: relative;
+}
+.dropdown-arrow{
+    position: absolute;
+    right: 90px;
+    top:12px;
+}
+ select option {
+        padding: 10px;
+}
+
+
+
+
+/* home job-card ___________________________ */
+
+.home-job-card-layer-1 {
+  margin: 12px;
+}
+.home-job-card-layer-1 h1 {
+  color: var(--green);
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.home-job-card-layer-1 .dot {
+  font-size: 30px;
+  /* margin-bottom: 15px; */
+}
+
+.home-job-card-layer-1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--textcolor);
+  font-size: 1rem;
+}
+
+.home-card-apply-btn {
+  display: flex;
+  height: 48px;
+  padding: 10px 24px 10px 32px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  color: var(--green);
+}
+
+.home-job-card-layer-2 h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* margin-bottom: 12px; */
+}
+.home-job-card-layer-2 ul {
+  padding-left: 25px;
+  margin: 0px;
+}
+.home-job-card-layer-2 ul li {
+  color: var(--textcolor);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  padding-left: 0px;
+}
+.home-job-card-layer-2 {
+  margin: 12px;
+}
+.home-card-apply-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  /* margin:12px; */
+}
+.home-job-card-bg {
+  display: flex;
+  padding: 8px 16px 16px 16px;
+  flex-direction: column;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 5px #ededed;
+}
+/* footer section___________________________________________ */
+.footer-bg-container{
+    border-top: j;
+    padding:0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px;
+    border-top: 1px solid #EFEFEF;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    margin-top: 32px !important;
+}
+.footer-part-1-bg {
+    display: flex;
+    flex-direction: column;
+   gap:12px;
+}
+.footer-part-1-bg img {
+    width:132px;
+    height:48px;
+}
+.footer-part-1-bg p{
+    color:var(--textcolor);
+font-family: "Noto Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+}
+.footer-part-2-innercontainer h1{
+    color: #636363;
+font-family: "Noto Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 32px */
+}
+.footer-part-2-innercontainer ul li{
+    list-style-type: none;
+    color: var(--textcolor);
+    /* color: #969696; */
+font-family: "Noto Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+     
+}
+.footer-part-2-innercontainer ul{
+    padding-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+   gap:12px;
+}
+.footer-part-2-bg{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+    gap:44px;
+    width:50%
+    
+}
+.footer-part-3-bg{
+   width:20%;
+   
+}
+.footer-part-1-bg{
+  width:30%
+}
+
+.link-class-job-card{
+text-decoration: none;
+}
+
+/* @media(min-width:1220px){
+  .footer-bg-container{
+    padding:0px 80px;
+  }
+} */
