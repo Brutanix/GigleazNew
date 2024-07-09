@@ -17,6 +17,7 @@ const JobView = () => {
           <Link className="link-class-job-card" to="/">
             <button>
               <svg
+              className="svg-jobview"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -53,12 +54,35 @@ const JobView = () => {
                   </clipPath>
                 </defs>
               </svg>
-              Back
+              Go Back
             </button>
           </Link>
 
           <p>Job Role Name at Gigleaz</p>
         </div>
+
+        <div className="role-details-bg role-details-bg-small">
+            <div className="role-detail-bg">
+              <p className="role-key">Role</p>
+              <p className="role-value">Product Designer</p>
+            </div>
+            <div className="role-detail-bg">
+              <p className="role-key">Department</p>
+              <p className="role-value">Design</p>
+            </div>
+            <div className="role-detail-bg">
+              <p className="role-key">Type</p>
+              <p className="role-value">Full Time</p>
+            </div>
+            <div className="role-detail-bg">
+              <p className="role-key">Location</p>
+              <p className="role-value">North America</p>
+            </div>
+            <div className="role-detail-bg">
+              <p className="role-key">Compensation</p>
+              <p className="role-value">₹15L – ₹19L</p>
+            </div>
+          </div>
 
         <div className="jobview-bottom-bg">
           <h1>Application Form</h1>
@@ -84,7 +108,7 @@ const JobView = () => {
             </div>
           </div>
 
-          <div className="role-details-bg">
+          <div className="role-details-bg role-details-bg-large">
             <div className="role-detail-bg">
               <p className="role-key">Role</p>
               <p className="role-value">Product Designer</p>
@@ -257,7 +281,7 @@ const JobView = () => {
                 <div className="job-apply-btn-container">
                   <button>
                     Let`s Apply
-                    <svg
+                    <svg className="svg-jobview"
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
                       height="32"
@@ -299,7 +323,7 @@ const JobView = () => {
               </>
             ) : (
               <>
-                <div className="form-bg-container">
+                <form className="form-bg-container">
                   <div className="widgets-wraper">
                     <div className="form-widget">
                       <label>First Name</label>
@@ -418,7 +442,7 @@ const JobView = () => {
                       <input type="text" />
                     </div>
                   </div>
-                </div>
+                </form>
 
                 <div className="resume-upload-container">
                   <p>Resume</p>

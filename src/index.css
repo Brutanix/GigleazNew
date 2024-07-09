@@ -9,6 +9,8 @@ body {
   padding:0;
   font-family: noto sans;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 *{
   margin: 0 !important;
@@ -19,3 +21,10 @@ html{
   font-size: 16px;
 }
 
+
+@media (max-width:420px){
+  html{
+    font-size: 12px;
+  }
+  
+}

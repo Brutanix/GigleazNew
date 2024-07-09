@@ -1,9 +1,15 @@
-import React from "react";
+import {React,useEffect} from "react";
 import "./utils.css";
 import { Link} from "react-router-dom";
 
 
 const Jobcardhome = () => {
+    // to scroll the window to top
+    const scrollToTop = () => {
+      window.scrollTo(0, 0)
+  }
+
+  
   return (
     <div className="home-job-card-bg">
       <div className="home-job-card-layer-1">
@@ -40,11 +46,11 @@ const Jobcardhome = () => {
       </div>
 
       <div className="home-card-apply-btn-container">
-        <Link className="link-class-job-card" to="/jobs">
-        <button className="home-card-apply-btn">
+        <Link className="link-class-job-card" to="/jobview">
+        <button onClick={scrollToTop} className="home-card-apply-btn">
           Apply Now 
          
-            <svg
+            <svg className="svgg"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"

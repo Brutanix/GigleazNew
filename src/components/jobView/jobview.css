@@ -26,6 +26,9 @@
   background-color: #ffffff;
   border: none;
 }
+.role-details-bg-small{
+  display: none !important;
+}
 
 .jobview-top-bg p {
   color: var(--textcolor);
@@ -112,7 +115,7 @@
   color: #393939;
   font-family: "Noto Sans";
   font-size: 1.5em;
-  font-size: 24px;
+  /* font-size: 24px; */
   font-style: normal;
   font-weight: 500;
   line-height: 160%; /* 38.4px */
@@ -181,7 +184,8 @@ line-height: 160%; /* 32px */
 .job-apply-btn-container button{
     display: flex;
     height: 48px;
-    padding: 10px 24px 10px 32px;
+    padding:8px 14px;
+    padding-right: 8px;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
@@ -189,7 +193,9 @@ line-height: 160%; /* 32px */
     border: none;
     font-size: 1rem;
     color: var(--green);
-    border:0.5px solid var(--green);
+    border: 2px solid rgba(41, 171, 135, 0.20);
+
+
 }
 .description-faqs-bg{
   margin-bottom: 64px !important;
@@ -221,7 +227,7 @@ line-height: 160%; /* 25.6px */
 .form-widget input{
   border-radius: 12px;
  background: #F6F6F6;
- padding:16px 0px;
+ padding:16px 10px;
  border: none;
  outline: none;
 }
@@ -250,6 +256,7 @@ line-height: 160%; /* 25.6px */
 .phone-number-bg > input{
   width: 100%;
   margin-left: 8px !important;
+  
 }
 .single-form-widget{
   width:100%;
@@ -305,6 +312,18 @@ background: rgba(41, 171, 135, 0.20);
   margin-top: 64px !important;
 }
 
+.submit-application-container button{
+  font-weight: 550;
+  border: none;
+  padding:10px 10px;
+  transition: all 0.7s;
+}
+
+.submit-application-container button:hover{
+  background-color:var(--green);
+  color: white;
+}
+
 @media (min-width:1200px) {
   .jobview-top-bg {
     padding: 24px 80px;
@@ -312,4 +331,96 @@ background: rgba(41, 171, 135, 0.20);
   .jobview-bottom-bg {
     padding: 24px 80px;
   }
+}
+
+@media(max-width:800px){
+  .role-details-bg-small{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: start;
+
+  
+  }
+  .role-details-bg-large{
+    display: none !important;
+
+  }
+  .role-detail-bg {
+   border:none;
+  }
+  .role-details-bg {
+    padding:0px 20px;
+  }
+
+  .role-detail-bg {
+   width:25%;
+  } 
+  
+}
+
+
+@media(max-width:420px){
+  .jobview-top-bg{
+    padding:24px 20px;
+  }
+  .svg-jobview{
+    width:24px;
+    height: 24px;
+  }
+  .jobview-top-bg button {
+   padding:6px 12px;
+   padding-left: 0px;
+
+  }
+  .jobview-top-bg{
+    gap:12px;
+  }
+  .jobview-bg-container {
+   gap:0px;
+  }
+  .role-detail-bg {
+    padding:0px;
+  }
+  .jobview-bottom-bg {
+    gap:12px;
+    padding: 24px 20px;
+    margin-top: 12px !important;
+  }
+  .job-toggle-btn-wraper{
+    margin-bottom: 24px !important;
+  }
+  .variable-scree-bg{
+    margin-top: 24px !important;
+  }
+  .description-faqs-bg{
+    gap: 36px;
+}
+.description-faqs-bg{
+  margin-bottom: 24px !important;
+}
+.job-apply-btn-container button{
+  padding:6px 10.5px;
+  padding-right: 6px;
+  font-weight: 500;
+}
+.widgets-wraper{
+
+  gap:24px;
+  flex-direction: column;
+}
+.form-widget{
+  width:100%;
+  gap: 8px;
+}
+.submit-application-container{
+  margin-top: 20px !important;
+}
+.resume-upload-container{
+  display: none;
+}
+.job-apply-btn-container button{
+  height: fit-content;
+}
 }

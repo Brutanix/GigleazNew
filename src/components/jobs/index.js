@@ -1,10 +1,65 @@
-import React from "react";
-import "./home.css";
+import React, { useState } from "react";
+import "./jobs.css";
 import { IoMdSearch } from "react-icons/io";
 import Dropdownhome from "../../utils/dropdown-home";
 import Jobcardhome from "../../utils/jobcard-home";
 import Footer from "../../utils/footer";
 import Paginationhome from "../../utils/materialComponent/pagination";
+import Alldata from "../../data.json";
+
+const DropdownComp = ({ each }) => {
+  const d = Alldata.dropdownData.options;
+  const data = each.options;
+
+  const [dropdown, setDropdown] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  return (
+    <div className="dropdown-wraper-bg">
+      <div
+        onClick={() => setDropdown(!dropdown)}
+        className={`dropdown-head ${dropdown == true ? "drop-icon-style" : ""}`}
+      >
+        {selectedItem !== null ? data[selectedItem].value : each.type}
+        <div className="drop-icon-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="8"
+            viewBox="0 0 10 6"
+            fill="none"
+          >
+            <path
+              d="M1 1L5 5L9 1"
+              stroke="#29AB87"
+              stroke-width="1.68"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      {dropdown == true ? (
+        <div className="dropdown-items-bg">
+          {data.map((each, index) => (
+            <div
+              key={each.name}
+              onClick={() => {
+                setSelectedItem(index);
+                setDropdown(false);
+              }}
+              className="drop-item"
+            >
+              {each.value}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <></>
+      )}
+    </div>
+  );
+};
 
 const Home = () => {
   return (
@@ -80,15 +135,64 @@ const Home = () => {
 
       <div className="jobs-bg-container">
         <div className="jobs-left-container">
+          {/* <Dropdownhome />
           <Dropdownhome />
           <Dropdownhome />
-          <Dropdownhome />
-          <Dropdownhome />
+          <Dropdownhome /> */}
+
+          {Alldata.dropdownData.map((each, index) => (
+            <DropdownComp each={each} />
+          ))}
+
+          <div className="contact-btn-bg">
+            <button className="location-contact-button">
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1865_25008)">
+                  <path
+                    d="M5 11.9961H19"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 15.9961L19 11.9961"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 7.99609L19 11.9961"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1865_25008">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div className="jobs-right-container">
           <div className="jobs-card-container">
-            <h1>Job Type 1</h1>
+            <div className="jobs-card-container-heading">
+              {" "}
+              <h1>Job Type 1</h1>
+            </div>
             <Jobcardhome />
             <Jobcardhome />
             <Jobcardhome />
@@ -96,7 +200,10 @@ const Home = () => {
             <Jobcardhome />
           </div>
           <div className="jobs-card-container">
-            <h1>Job Type 2</h1>
+            <div className="jobs-card-container-heading">
+              {" "}
+              <h1>Job Type 2</h1>
+            </div>
             <Jobcardhome />
             <Jobcardhome />
             <Jobcardhome />
@@ -105,13 +212,13 @@ const Home = () => {
           </div>
 
           <div className="pagination-container">
-           <Paginationhome/>
+            <Paginationhome />
           </div>
         </div>
       </div>
 
-     {/* _________________________________footer section____________________________________________________ */}
-     <Footer/>
+      {/* _________________________________footer section____________________________________________________ */}
+      <Footer />
     </div>
   );
 };

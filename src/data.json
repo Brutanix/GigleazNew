@@ -1,0 +1,41 @@
+{
+    "dropdownData": [
+      {
+        "type": "Role",
+        "options": [
+          { "name": "designer", "value": "Designer" },
+          { "name": "tester", "value": "Tester" },
+          { "name": "developer", "value": "Developer" },
+          { "name": "manager", "value": "Manager" }
+        ]
+      },
+      {
+        "type": "Location",
+        "options": [
+          { "name": "hyderabad", "value": "Hyderabad" },
+          { "name": "andharapradesh", "value": "Andharapradesh" },
+          { "name": "chennai", "value": "Chennai" },
+          { "name": "gujarat", "value": "Gujarat" }
+        ]
+      },
+      {
+        "type": "Employment",
+        "options": [
+          { "name": "full_time", "value": "Full Time" },
+          { "name": "part_time", "value": "Part Time" },
+          { "name": "contract", "value": "Contract" },
+          { "name": "internship", "value": "Internship" }
+        ]
+      },
+      {
+        "type": "Experience",
+        "options": [
+          { "name": "entry_level", "value": "Entry Level" },
+          { "name": "mid_level", "value": "Mid Level" },
+          { "name": "senior_level", "value": "Senior Level" },
+          { "name": "executive_level", "value": "Executive Level" }
+        ]
+      }
+    ]
+  }
+  
