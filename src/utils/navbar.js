@@ -2,7 +2,7 @@ import {React,useState} from "react";
 import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import "./utils.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/nav-svg-logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

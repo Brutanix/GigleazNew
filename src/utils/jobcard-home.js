@@ -11,14 +11,15 @@ const Jobcardhome = () => {
 
   
   return (
+    <Link className="link-class-job-card" to="/jobview">
     <div className="home-job-card-bg">
       <div className="home-job-card-layer-1">
         <h1>Job Role 1</h1>
         <div >
           <span>₹20K – ₹30K</span>
-          <span className="dot">-</span>
+          <span className="dot">•</span>
           <span>Full time</span>
-          <span className="dot">-</span>
+          <span className="dot">•</span>
           <span>Remote</span>
         </div>
       </div>
@@ -46,7 +47,6 @@ const Jobcardhome = () => {
       </div>
 
       <div className="home-card-apply-btn-container">
-        <Link className="link-class-job-card" to="/jobview">
         <button onClick={scrollToTop} className="home-card-apply-btn">
           Apply Now 
          
@@ -89,9 +89,10 @@ const Jobcardhome = () => {
             </svg>
        
         </button>
-        </Link>
       </div>
     </div>
+    </Link>
+
   );
 };
 

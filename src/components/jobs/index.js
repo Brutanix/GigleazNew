@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./jobs.css";
 import { IoMdSearch } from "react-icons/io";
 import Dropdownhome from "../../utils/dropdown-home";
@@ -62,6 +62,9 @@ const DropdownComp = ({ each }) => {
 };
 
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div>
       {/* _______________________________section-hero_______________________________________________________ */}

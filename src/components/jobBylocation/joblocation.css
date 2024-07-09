@@ -33,7 +33,7 @@
   line-height: 120%; /* 24px */
 }
 .explore-office-bottom-bg {
-  padding: 10px 40px;
+  padding: 40px 40px;
   display: flex;
   flex-direction: row;
 }
@@ -184,7 +184,7 @@
     padding: 10px 80px;
   }
   .explore-office-bottom-bg {
-    padding: 10px 80px;
+    padding: 40px 80px;
   }
 }
 
@@ -252,7 +252,7 @@
     width: 100%;
   }
   .explore-office-bottom-bg {
-    /* padding: 10px 40px; */
+    /* padding: 40px 40px; */
 
   }
   .explore-office-top-bg h1 {

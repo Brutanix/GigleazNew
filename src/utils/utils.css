@@ -30,7 +30,10 @@ body {
 .nav-active-styling{
   color:#29AB87;
   list-style-type:disc;
-
+}
+.nav-logo{
+  height:48px;
+  width:120px;
 }
 
 
@@ -38,7 +41,7 @@ body {
   text-decoration: none;
   color: #323232;
 font-family: "Noto Sans";
-font-size: 1.25rem;
+font-size: 1rem;
 font-style: normal;
 font-weight: 500;
 padding:10px;
@@ -167,6 +170,7 @@ line-height: 160%;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+  color: #323232;
   margin-bottom: 12px;
 }
 .home-job-card-layer-2 ul {
@@ -202,36 +206,30 @@ line-height: 160%;
   box-shadow: 0px 0px 20px 5px #ededed;
 }
 /* footer section___________________________________________ */
+
+
+
+
+
+
+
+
+
 .footer-bg-container{
-    padding:0px 40px;
+    padding:40px 40px;
+    color:white !important;
     display: flex;
-    flex-direction: row;
+    background-color:rgba(41, 171, 135, 1);
+    flex-direction: column;
+    gap:20px;
     justify-content: space-between;
     border: 1px;
     border-top: 1px solid #EFEFEF;
     padding-top: 24px;
-    padding-bottom: 48px;
     margin-top: 32px !important;
 }
-.footer-part-1-bg {
-    display: flex;
-    flex-direction: column;
-   gap:12px;
-}
-.footer-part-1-bg img {
-    width:132px;
-    height:48px;
-}
-.footer-part-1-bg >p{
-  color: #969696;
-font-family: "Noto Sans";
-font-size: 1rem;
-font-style: normal;
-font-weight: 500;
-line-height: 160%; /* 25.6px */
-}
 .footer-part-2-innercontainer >h1{
-    color: #636363;
+    color:white;
 font-family: "Noto Sans";
 font-size: 1.25rem;
 font-style: normal;
@@ -241,7 +239,7 @@ margin-bottom: 16px !important;
 }
 .footer-part-2-innercontainer ul li{
     list-style-type: none;
-    color: #969696; 
+    color:white; 
 font-family: "Noto Sans";
 font-size: 1rem;
 font-style: normal;
@@ -259,9 +257,9 @@ line-height: 160%; /* 25.6px */
 .footer-part-2-bg{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     gap:24px;
-    width:50%
+    width:100%;
     
 }
 .footer-part-3-bg{
@@ -279,11 +277,48 @@ line-height: 160%; /* 25.6px */
 text-decoration: none;
 }
 
-/* @media(min-width:1220px){
-  .footer-bg-container{
-    padding:0px 80px;
-  }
-} */
+.icons-footer-bg-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:24px;
+
+}
+.icons-footer-bg-container >img{
+  margin-right: 24px!important;
+}
+.footer-social-icon{
+  padding:20px;
+  height: 50px;
+  width:50px;
+  border-radius: 30px;
+ background-color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+.footer-copy-right-bg{
+  background-color: white;
+  padding: 13px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copy-right-bg >p{
+  color: #29AB87;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+
+/* new footer styling______________________________ */
+
+
+
 
 
 /* job explore card_______ */
@@ -325,24 +360,28 @@ flex-direction: row;
 align-items: center;
 gap:10px;
 }
-
+@media(min-width:1200px){
+  .footer-bg-container{
+  padding:40px 80px;
+  }
+}
 
 @media (max-width:800px){
-  .footer-bg-container{
+  .footer-part-2-bg{
+  flex-wrap: wrap;
+  flex-grow: 1;
+flex-basis: 1;
+flex-shrink: 1;
 
-    flex-direction: column;
-    justify-content: space-between;
-    gap:24px;
-    align-items: start;
-}
-.footer-part-1-bg ,.footer-part-2-bg, .footer-part-3-bg{
-  width:100%;
-}
-.footer-part-2-bg{
-  display: flex;
-  flex-direction: row;
-  justify-content:start;  
-}
+    
+  }
+  .footer-part-2-innercontainer{
+    flex-grow: 1;
+  }
+  .footer-part-3-bg{
+    flex-grow: 1;
+     
+  }
 }
 
 
@@ -369,4 +408,39 @@ gap:10px;
 .footer-bg-container{
   margin-top: 0px !important;
 }
+
+.footer-social-icon{
+  padding:15px;
+  height: 40px;
+  width:40px;
+  border-radius: 25px;
+}
+.footer-social-icon >img{
+  height:25px;
+  width:25px;
+}
+.icons-footer-bg-container{
+  gap:16px;
+}
+.icons-footer-bg-container >img{
+  height: 60px;
+  width:120px;
+}
+}
+
+@media (max-width:370px){
+
+  .footer-social-icon{
+    padding:15px;
+    height: 35px;
+    width:35px;
+    border-radius: 25px;
+  }
+  .icons-footer-bg-container{
+    gap:12px;
+  }
+  .icons-footer-bg-container >img{
+    height: 50px;
+    width:100px;
+  }
 }

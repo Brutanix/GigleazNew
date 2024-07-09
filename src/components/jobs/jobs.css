@@ -35,7 +35,6 @@
 .hero-input-container >input {
   font-size: 1rem;
   border: none;
-  border-left: 1px solid #efefef;
   margin-left: 8px;
   line-height: 160%;
   padding-left: 8px;

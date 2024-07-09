@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./jobview.css";
 import Footer from "../../utils/footer";
 import { Link } from "react-router-dom";
@@ -9,6 +9,14 @@ const JobView = () => {
   const changeActiveTab = (value) => {
     setActiveTab(value);
   };
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
+  const hardRefresh=()=>{
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
@@ -279,7 +287,7 @@ const JobView = () => {
                 </div>
 
                 <div className="job-apply-btn-container">
-                  <button>
+                  <button onClick={()=>{changeActiveTab("application");hardRefresh()}}>
                     Let`s Apply
                     <svg className="svg-jobview"
                       xmlns="http://www.w3.org/2000/svg"
